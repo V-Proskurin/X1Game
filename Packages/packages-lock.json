@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.asynkrone.unitytelegramgame": {
+      "version": "https://github.com/asynkr/unity-telegram-game.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "b048de26d4bfd012c713a30f4dc12aca62a4912b"
+    },
     "com.unity.burst": {
       "version": "1.8.13",
       "depth": 1,
