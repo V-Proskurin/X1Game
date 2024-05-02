@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serverURI: https://game.x1team.ru/
-  SCORE_TOKEN: 
+  SCORE_TOKEN: 29000000000000005300000000000000110000000000000035000000000000003b000000000000001d00000000000000590000000000000061000000000000001300000000000000
 --- !u!4 &76199458
 Transform:
   m_ObjectHideFlags: 0
@@ -647,7 +647,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1564750634}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a898fa1dd18d014e82bbfeb371b8413, type: 3}
+  m_Script: {fileID: 11500000, guid: bd7b65fa73667934f9fef4e50b030b34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1859725876}
