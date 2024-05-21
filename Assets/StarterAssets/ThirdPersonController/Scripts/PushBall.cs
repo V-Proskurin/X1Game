@@ -7,15 +7,17 @@ public class PushBall : NetworkBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (!isServer) return;
-        if (collision.gameObject.tag == "Ball")
+        if (isServer)
         {
-            Rigidbody ballRigidbody = collision.gameObject.GetComponent<Rigidbody>();
-            if (ballRigidbody != null)
+            if (collision.gameObject.tag == "Ball")
             {
-                Vector3 pushDirection = collision.contacts[0].point - transform.position;
-                pushDirection = -pushDirection.normalized; // Определяем направление толчка
-                ballRigidbody.AddForce(pushDirection * pushForce, ForceMode.Impulse); // Толкаем мяч с определенной силой
+                Rigidbody ballRigidbody = collision.gameObject.GetComponent<Rigidbody>();
+                if (ballRigidbody != null)
+                {
+                    Vector3 pushDirection = collision.contacts[0].point - transform.position;
+                    pushDirection = -pushDirection.normalized; // Определяем направление толчка
+                    ballRigidbody.AddForce(pushDirection * pushForce, ForceMode.Impulse); // Толкаем мяч с определенной силой
+                }
             }
         }
     }
