@@ -1,12 +1,15 @@
 mergeInto(LibraryManager.library, {
 
-    getUserNickname: function () {
+    getUserNickname: function () 
+    {
         return window.x1_unity_data.user.nickname
+    }
+
+    logNicname: function () 
+    {
+        
     }
 
 });
 
 
-function getUserNickname() {
-    return window.x1_unity_data.user.nickname
-}
