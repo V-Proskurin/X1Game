@@ -6,7 +6,7 @@ public class UI_GetName : MonoBehaviour     //для получения имен
 {
 #if UNITY_WEBGL
     [DllImport("__Internal")]
-    private static extern string logNickname();
+    private static extern void Hello();
 
     [DllImport("__Internal")]
     private static extern string getUserNickname();
@@ -28,7 +28,7 @@ public class UI_GetName : MonoBehaviour     //для получения имен
 
 #if UNITY_WEBGL
         Debug.Log("This is a WebJL build!");
-        logNickname();
+        //Hello();
         _inputField.text = getUserNickname();
         _name = getUserNickname();
         Debug.Log(_name);
